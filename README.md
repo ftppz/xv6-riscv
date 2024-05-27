@@ -1,7 +1,7 @@
 ## u need tmux
 
 ```bash
-make # compile xv6-riscv
+$ make # compile xv6-riscv
 ```
 
 ```bash
