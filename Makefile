@@ -171,6 +171,7 @@ qemu-gdb: $K/kernel .gdbinit fs.img
 	@echo "*** Now run 'gdb' in another window." 1>&2
 	$(QEMU) $(QEMUOPTS) -S $(QEMUGDB)
 
+# this init.py is for debuging context switch
 debug: 
 	gdb-multiarch -tui -x init.py
 
