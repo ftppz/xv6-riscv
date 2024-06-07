@@ -1,0 +1,12 @@
+# lecture-27
+debug for sys_read
+change init.py for debuging sys_read   
+```gdb
+c   # continue run to sys_read(), then step into argaddr(1, &p);
+s   # step into argaddr()
+s   # step into argarw()
+s   # u will get current process by myproc(), well, there is "sh"
+# step into consoleread(), u have to add some characters into xv6-shell
+# then u can't sleep in this while(n > 0)
+# then n n n ... u will skip to usertrapret()
+```

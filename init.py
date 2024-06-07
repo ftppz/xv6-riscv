@@ -34,10 +34,13 @@ gdb.execute('set riscv use-compressed-breakpoints yes')
 
 # Set a hard breakpoint on trampoline
 # All user traps go here.
-gdb.execute('hb *0x3ffffff000')
+# gdb.execute('hb *0x3ffffff000')
 
 # This is the User program entry
-gdb.execute('hb *0x0')
+# gdb.execute('hb *0x0')
 
-# gdb.execute('hb *0x80004c88')
+# Set a breakpoint on sys_read()
+dbg.execute('b sys_read')
+dbg.execute('b consoleread')
+
 
